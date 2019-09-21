@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sudoku</title>
+    <link
+      href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+      type="text/css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Sudoku Wizard</h1>
+    </header>
+    <div data-container class="container">
+      <section data-sudoku class="sudoku">
+        <div class="plain">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+        <div class="shaded">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+        <div class="plain">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+        <div class="shaded">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+        <div class="plain">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+        <div class="shaded">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+        <div class="plain">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+        <div class="shaded">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+        <div class="plain">
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+          <input type="text" size="1" maxlength="1" />
+        </div>
+      </section>
+    </div>
+    <div data-btns>
+      <button data-start-btn>Start</button>
+      <button data-reset-btn>Reset</button>
+      <button data-clear-btn>Clear</button>
+    </div>
+    <footer>
+      <p>Design By <em>Yegon</em></p>
+    </footer>
+    <script
+      src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

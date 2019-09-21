@@ -1,0 +1,81 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  background-color: burlywood;
+}
+
+h1 {
+  text-align: center;
+}
+
+em {
+  color: chartreuse;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 400px;
+}
+
+.sudoku {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  /* width: 400px; */
+  height: 400px;
+}
+
+.plain {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  background-color: #ffffff;
+  border: thin solid black;
+}
+
+.shaded {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  background-color: #d9d9d9;
+  border: thin solid black;
+}
+input {
+  background-color: inherit;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  border: thin solid black;
+}
+
+div[data-btns] {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+button:nth-child(1) {
+  background-color: green;
+}
+
+button:nth-child(2) {
+  background-color: yellow;
+}
+
+button:nth-child(3) {
+  background-color: orangered;
+}
+div[data-btns] button {
+  font-size: 1.5em;
+  margin: 30px;
+}
+
+button:hover {
+  text-transform: uppercase;
+  color: antiquewhite;
+}
+
+footer {
+  color: #ffffff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
