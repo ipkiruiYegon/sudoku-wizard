@@ -1,4 +1,4 @@
-# sudoku-wizard design by yegon
+# sudoku-wizard design by yegon https://travis-ci.com/ipkiruiYegon/sudoku-wizard.svg?branch=master
 Solve sudoku puzzle easily by using this app.
 Steps:-
 1. Enter the initial numbers provided to the specific boxes.
