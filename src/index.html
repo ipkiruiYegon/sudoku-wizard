@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudoku</title>
     <link
       href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
@@ -15,109 +16,109 @@
     </header>
     <div data-container class="container">
       <section data-sudoku class="sudoku">
-        <div class="plain">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r1 class="plain sq-1">
+          <input class="square-a hline-h1 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-a hline-h1 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-a hline-h1 vline-v3" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-a hline-h2 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-a hline-h2 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-a hline-h2 vline-v3" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-a hline-h3 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-a hline-h3 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-a hline-h3 vline-v3" type="text" size="1" maxlength="1" value=""/>
         </div>
-        <div class="shaded">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r1 class="shaded sq-2">
+          <input class="square-b hline-h1 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-b hline-h1 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-b hline-h1 vline-v6" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-b hline-h2 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-b hline-h2 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-b hline-h2 vline-v6" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-b hline-h3 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-b hline-h3 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-b hline-h3 vline-v6" type="text" size="1" maxlength="1" value=""/>
         </div>
-        <div class="plain">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r1 class="plain sq-3">
+          <input class="square-c hline-h1 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-c hline-h1 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-c hline-h1 vline-v9" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-c hline-h2 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-c hline-h2 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-c hline-h2 vline-v9" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-c hline-h3 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-c hline-h3 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-c hline-h3 vline-v9" type="text" size="1" maxlength="1" value=""/>
         </div>
-        <div class="shaded">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r2 class="shaded sq-4">
+          <input class="square-d hline-h4 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-d hline-h4 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-d hline-h4 vline-v3" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-d hline-h5 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-d hline-h5 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-d hline-h5 vline-v3" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-d hline-h6 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-d hline-h6 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-d hline-h6 vline-v3" type="text" size="1" maxlength="1" value=""/>
         </div>
-        <div class="plain">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r2 class="plain sq-5">
+          <input class="square-e hline-h4 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-e hline-h4 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-e hline-h4 vline-v6" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-e hline-h5 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-e hline-h5 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-e hline-h5 vline-v6" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-e hline-h6 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-e hline-h6 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-e hline-h6 vline-v6" type="text" size="1" maxlength="1" value=""/>
         </div>
-        <div class="shaded">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r2 class="shaded sq-6">
+          <input class="square-f hline-h4 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-f hline-h4 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-f hline-h4 vline-v9" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-f hline-h5 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-f hline-h5 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-f hline-h5 vline-v9" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-f hline-h6 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-f hline-h6 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-f hline-h6 vline-v9" type="text" size="1" maxlength="1" value=""/>
         </div>
-        <div class="plain">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r3 class="plain sq-7">
+          <input class="square-g hline-h7 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-g hline-h7 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-g hline-h7 vline-v3" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-g hline-h8 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-g hline-h8 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-g hline-h8 vline-v3" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-g hline-h9 vline-v1" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-g hline-h9 vline-v2" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-g hline-h9 vline-v3" type="text" size="1" maxlength="1" value=""/>
         </div>
-        <div class="shaded">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r3 class="shaded sq-8">
+          <input class="square-h hline-h7 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-h hline-h7 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-h hline-h7 vline-v6" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-h hline-h8 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-h hline-h8 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-h hline-h8 vline-v6" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-h hline-h9 vline-v4" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-h hline-h9 vline-v5" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-h hline-h9 vline-v6" type="text" size="1" maxlength="1" value=""/>
         </div>
-        <div class="plain">
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
-          <input type="text" size="1" maxlength="1" />
+        <div data-sq-r3 class="plain sq-9">
+          <input class="square-i hline-h7 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-i hline-h7 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-i hline-h7 vline-v9" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-i hline-h8 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-i hline-h8 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-i hline-h8 vline-v9" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-i hline-h9 vline-v7" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-i hline-h9 vline-v8" type="text" size="1" maxlength="1" value=""/>
+          <input class="square-i hline-h9 vline-v9" type="text" size="1" maxlength="1" value=""/>
         </div>
       </section>
     </div>
     <div data-btns>
-      <button data-start-btn>Start</button>
+      <button data-start-btn>Solve</button>
       <button data-reset-btn>Reset</button>
       <button data-clear-btn>Clear</button>
     </div>
