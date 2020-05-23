@@ -18,8 +18,6 @@ const fieldInput = (event, fieldIndex, fields) => {
   if (!isAllowedInput && !isSpecialKey) {
     event.preventDefault();
   } else {
-    console.log(fields[fieldIndex]);
-
     if (smartCheck(fields[fieldIndex], key) === "Yes") {
       event.preventDefault();
       alert("Not allowed, duplicate number");
@@ -45,11 +43,8 @@ const solveSudoku = () => {
             idealNumber = cno.toString();
           }
         }
-        console.log("idx-", index, possibleValuesArr);
-        console.log("no-", idealNumber);
 
         if (possibleValuesArr.length === 1 && idealNumber !== "") {
-          console.log("here");
           field.value = idealNumber;
           field.style.color = "#03730A";
           logicChecker = 0;
@@ -97,14 +92,12 @@ const solveSudoku = () => {
                 field.style.color = "#03730A";
                 logicChecker = 0;
                 squaresSolved++;
-                setTimeout(() => {}, 100);
               } else if (smartResponse === "Yes") {
                 if (ntimes === 1 && oddTimes === 1) {
                   oddField.value = n.toString();
                   oddField.style.color = "#03730A";
                   logicChecker = 0;
                   squaresSolved++;
-                  setTimeout(() => {}, 100);
                 }
               }
             }
@@ -206,14 +199,12 @@ const solveSudoku = () => {
                 field.style.color = "#03730A";
                 logicChecker = 0;
                 squaresSolved++;
-                setTimeout(() => {}, 100);
               } else if (smartResponsV === "Yes") {
                 if (ntimes === 1 && oddTimes === 1) {
                   oddField.value = n.toString();
                   oddField.style.color = "#03730A";
                   logicChecker = 0;
                   squaresSolved++;
-                  setTimeout(() => {}, 100);
                 }
               }
             }
